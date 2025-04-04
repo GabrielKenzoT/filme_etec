@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Bem vindo ao Os Jogos!</h1>
+<hr>
+<a href="/games">Ir páginas de jogos</a>
+<br><br>
+<a href="/cadgames">Cadastrar jogos</a>
+<br><br>
+<a href="/consoles">Cadastrar Consoles</a>
+
+<hr>
+
+<img src="{{url_for('static', filename= 'images/pedrinho.png')}}" alt="Os jogos" width="600px">
+
+
+{% endblock content %}
