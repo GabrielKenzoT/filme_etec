@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="bg-secondary text-light py-5">
+    <div class="container">
+        <div class="row g-5 justify-content-center">
+            <div class="col-md-8 col-lg-6">
+            <h1 class="mb-3 text-center">Feedback</h1>
+            <p class="lead mb-4">
+            Faça um Feedback para que possamos melhorar nossos serviços, melhorar sua experiências e corrigir bugs, sua felicidade e a nosso felicidade
+            </p>
+
+                <div class="row g-3">
+        
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                    Porfavor adicione seu Email para proseguir com o feedback.
+                    </div>
+                </div>
+        
+                <div class="col-12">
+                    <label for="country" class="form-label">Opções de feedback</label>
+                    <select class="form-select" id="country" required="">
+                    <option value="">Escolha</option>
+                    <option>Filmes que poderiam ser adicionados</option>
+                    <option>Bugs a serem concertados</option>
+                    <option>Problemas no site ou app</option>
+                    <option>Outros</option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Porfavor escolha uma opção de feedback para proseguir
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <label for="description" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="description" rows="5" placeholder="Digite seu feedback aqui..."></textarea>
+                    <div class="invalid-feedback">
+                    Porfavor adicione uma descrição para continuar
+                    </div>
+                </div>
+        
+                <hr class="my-4">
+        
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar Feedback</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+  {% endblock content %}

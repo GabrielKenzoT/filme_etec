@@ -5,20 +5,20 @@ def init_app(app):
     @app.route('/')
     
     def home():
-        return render_template('index.html')
+        return render_template('home.html')
     
     @app.route('/lista')
     
     def lista():
         return render_template('lista.html')
     
-    @app.route('/cadfilmes')
+    @app.route('/feedback')
     
     
-    def cadfilmes():
-        return render_template('cadfilmes.html')
+    def feedback():
+        return render_template('feedback.html')
     
-    @app.route('/cadseries')
+    @app.route('/Login')
     
-    def cadseries():
-        return render_template('cadseries.html')
+    def Login():
+        return render_template('login.html')
