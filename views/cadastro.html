@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-</head>
-<body>
-    <h3>MSG</h3>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class=" px-4 py-5 bg-secondary bg-gradient-dark">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 text-light">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{{url_for('static',filename='images/imgcadastro.png' )}}" class="d-block mx-lg-auto img-fluid" alt="Imagem Cinema" width="500" height="500" loading="lazy">
+      </div>
+      <div class="col-12 col-md-8 col-lg-6" style="transform: translateX(25px);">
+        <h1 class="display-4 fw-bold lh-1 mb-4 text-light">Cadastro de filmes</h1>
+        <p class="lead">Cadastre aqui seus filmes incríveis e ajude a construir uma coleção cinematográfica memorável! Este é o espaço onde cada história pode ganhar o reconhecimento que merece, brilhando em nossa lista e encantando todos que buscam por experiências únicas, emocionantes e inesquecíveis no mundo do cinema. Deixe sua marca e compartilhe aquelas obras que merecem ser vistas, 
+          admiradas e lembradas por todos os amantes da sétima arte.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-outline-light btn-lg px-4">Cadastro</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

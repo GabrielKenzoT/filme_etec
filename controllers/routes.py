@@ -20,5 +20,5 @@ def init_app(app):
     
     @app.route('/cadastro')
     
-    def Login():
+    def cadastro():
         return render_template('cadastro.html')
