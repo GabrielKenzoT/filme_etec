@@ -18,7 +18,7 @@ def init_app(app):
     def feedback():
         return render_template('feedback.html')
     
-    @app.route('/Login')
+    @app.route('/cadastro')
     
     def Login():
-        return render_template('login.html')
+        return render_template('cadastro.html')

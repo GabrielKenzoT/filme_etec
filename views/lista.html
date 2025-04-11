@@ -46,33 +46,38 @@
                 crossorigin="anonymous"></script>
 
                 <div class="row g-3">
+
+                    <div class="col-12">
+                        <label for="description" class="form-label">Alguma coisa para ser adicionada aqui...</label>
+                        <textarea class="form-control" id="description" rows="5" placeholder="Digite o texto aqui"></textarea>
+                        <div class="invalid-feedback">
+                        adicione uma descrição para continuar
+                        </div>
+                    </div>
         
         
                 <div class="col-12">
-                    <label for="country" class="form-label">Opções de feedback</label>
+                    <label for="country" class="form-label">Selecione um tipo de Filme</label>
                     <select class="form-select" id="country" required="">
-                    <option value="">Escolha</option>
-                    <option>Filmes que poderiam ser adicionados</option>
-                    <option>Bugs a serem concertados</option>
-                    <option>Problemas no site ou app</option>
-                    <option>Outros</option>
+                    <option value="">Selecione um gênero que queira assitir</option>
+
+                    <option>Ação</option>
+                    <option>Aventura</option>
+                    <option>Comédia</option>
+                    <option>Drama</option>
+                    <option>Ficção Científica</option>
+                    <option>Romance</option>
+                    <option>Terror</option>
+                    
                     </select>
                     <div class="invalid-feedback">
                     Porfavor escolha uma opção de feedback para proseguir
                     </div>
                 </div>
-                
-                <div class="col-12">
-                    <label for="description" class="form-label">Descrição</label>
-                    <textarea class="form-control" id="description" rows="5" placeholder="Digite seu feedback aqui..."></textarea>
-                    <div class="invalid-feedback">
-                    Porfavor adicione uma descrição para continuar
-                    </div>
-                </div>
         
                 <hr class="my-4">
         
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar Feedback</button>
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Procurar Filme</button>
             </form>
             </div>
         </div>
