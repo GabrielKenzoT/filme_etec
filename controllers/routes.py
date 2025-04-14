@@ -19,6 +19,7 @@ def init_app(app):
         return render_template('feedback.html')
     
     @app.route('/cadastro')
-    
-    def Login():
+
+
+    def cadastro():
         return render_template('cadastro.html')
