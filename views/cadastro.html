@@ -15,5 +15,61 @@
       </div>
       </div>
     </div>
+    <br>
+    <br>
+  </div>
+  
+
+  <div class=" d-flex flex-column flex-shrink-0 bg-dark text-light py-5">
+    <div class="container">
+      <h1 class="mb-3 text-center display-5 fw-bold mb-5">Cadastro de Filmes</h1>
+        <div class="row g-5 justify-content-end">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{url_for('static',filename='images/imgcadastro.png' )}}" class="d-block mx-lg-auto img-fluid" alt="Imagem Cinema" width="500" height="500" loading="lazy">
+          </div>
+          <div class="col-md-8 col-lg-6">
+            <p class="lead mb-4">
+            Faça aqui o Cadastro de seus filmes Preferido!
+            </p>
+              <form>
+                <div class="row g-3">
+        
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                    Porfavor adicione seu Email para proseguir com o feedback.
+                    </div>
+                </div>
+        
+                <div class="col-12">
+                    <label for="country" class="form-label">Opções de feedback</label>
+                    <select class="form-select" id="country" required="">
+                    <option value="">Escolha</option>
+                    <option>Filmes que poderiam ser adicionados</option>
+                    <option>Bugs a serem concertados</option>
+                    <option>Problemas no site ou app</option>
+                    <option>Outros</option> 
+                    </select>
+                    <div class="invalid-feedback">
+                    Porfavor escolha uma opção de feedback para proseguir
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <label for="description" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="description" rows="5" placeholder="Digite seu feedback aqui..."></textarea>
+                    <div class="invalid-feedback">
+                    Porfavor adicione uma descrição para continuar
+                    </div>
+                </div>
+        
+                <hr class="my-4">
+        
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar Feedback</button>
+            </form>
+          </div>
+        </div>
+    </div>
   </div>
 {% endblock content %}
