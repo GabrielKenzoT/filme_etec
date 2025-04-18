@@ -1,19 +1,49 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<div class="container-fluid flex border border-dark p-3 my-5">
-
-<br>
-<br>
-<h1>Bem vindo ao Filmes Etec!</h1>
-<hr>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMR2coT1o8h89zATZLdXe8Aja6yiIStAWEPg&s" class="w-250 rounded-2 d-block mx-auto">
-<h3>Selecione uma página para acessa-lá: </h3>
-
-<a class="container-fluid flex-column border border-dark p-1" href="/lista">Ir para a página de Catálogos</a>
-<br><br>
-<a class="container-fluid flex-column border border-dark p-1" href="/cadastro">Cadastrar</a>
- 
-<hr>
+{% extends 'base.html' %} {% block content %}
+<br />
+<div class="container-fluid bg-dark">
+  <hr class="featurette-divider" />
+  <div class="row featurette">
+    <div class="row featurette">
+      <div class="col-12 col-md-8 col-lg-6" style="transform: translateX(25px);">
+        <h2 class="featurette-heading px-4 py-5 fw-normal text-white lh-5">
+          Filmes para todos.<span class="text-white "
+            >Em qualquer lugar.</span
+          >
+        </h2>
+        <p class="lead text-white ">"Bem-vindo ao nosso cantinho especial de filmes, onde há algo para todos! Aqui, acreditamos que o cinema é uma janela para diferentes histórias, emoções e aventuras, e por isso, oferecemos uma seleção variada para agradar todos os gostos e idades. Seja você fã de comédias leves, dramas emocionantes, filmes de ação, animações divertidas ou clássicos inesquecíveis, nosso site tem o filme perfeito esperando por você. Venha explorar e descobrir novas paixões no mundo do cinema, porque aqui, a diversão é garantida para todos!"</p>
+      </div>
+      <div class="col-md-5 px-4 py-5">
+        <img
+          src="/./static/images/filmes1.png"
+          class="d-block w-100"
+          height="450"
+          alt="Descrição da imagem 1"
+        />
+      </div>
+    </div>
+    <br />
+    <br />
+    <hr class="featurette-divider">
+    <hr class="featurette-divider" />
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-white px-4 py-5 fw-normal lh-5">
+         Temos filmes clássicos, recentes, e se quiser até o seu.
+        </h2>
+        <p class="lead text-white">
+            Nosso site de filmes oferece uma variedade incrível de opções, incluindo filmes antigos e os mais recentes lançamentos, tudo no nosso catálogo atualizado. Além disso, implementamos uma nova funcionalidade que permite aos usuários cadastrar seus próprios filmes, tornando a experiência ainda mais interativa e personalizada. Aproveite para explorar e compartilhar suas novidades conosco!.
+        </p>
+      </div>
+      <div class="col-md-5 bg-dark px-4 py-5 order-md-1">
+        <img
+          src="/./static/images/filmes2.jpg"
+          class="d-block w-100"
+          height="450"
+          alt="Descrição da imagem 2"
+        />
+      </div>
+    </div>
+  </div>
+  <br>
+  {% endblock content %}
 </div>
-{% endblock content %} 
