@@ -30,3 +30,44 @@ button {
 label {
   font-family: 'Sora';
 }
+span {
+  font-family: 'Sora';
+}
+
+.hover-trigger {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.hover-description {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  transform: translateY(10px);
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-footer:hover .hover-description {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.hover-description p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+#descr{
+  max-width: 60ch;
+  word-wrap: break-word;
+  word-break: break-word;
+}

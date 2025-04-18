@@ -50,15 +50,32 @@
                 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
                 crossorigin="anonymous"></script>
 
-                <div class="row g-3">
-
-	 <h5>Filmes Mais bem avaliados</h5>
-                <hr class="my-4">
-
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Procurar Filme</button>
-            </form>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="mb-4 text-center">Filmes Mais Bem Avaliados</h3>
+                    
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        {% for filme in filmelist %}
+                        <div class="col">
+                            <div class="card h-100 bg-dark text-light border-light">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">{{filme.titulo}}</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><strong>Ano:</strong> {{filme.ano}}</p>
+                                    <p class="card-text"><strong>Gênero:</strong> <span class="badge bg-primary">{{filme.genero}}</span></p>
+                                </div>
+                                <div class="card-footer bg-transparent border-light position-relative">
+                                    <button class="btn btn-sm btn-outline-light hover-trigger">Detalhes</button>
+                                    <div class="hover-description">
+                                        <p class="mb-0">{{filme.descricao}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
             </div>
-        </div>
         </div>
     </div>
 </div>
